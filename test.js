@@ -1,7 +1,9 @@
-const test = require('./index')
+const gifFinder = require('./index').gifFinder
 
 async function getImage() {
-    let res = test.gifFinder('kiss')
+    let res = await gifFinder('hug')
+
+    console.log(res)
 }
 
 getImage()
