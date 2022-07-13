@@ -1,5 +1,5 @@
 {
-  "name": "gif-finder",
+  "name": "r34.api",
   "version": "1.6.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yokachi/r34.api.git"
+    "url": "git+https://github.com/Yokachi/gif-finder.git"
   },
   "keywords": [
     "api",
@@ -23,9 +23,9 @@
   "author": "Yokachi,Jules010209",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yokachi/r34.api/issues"
+    "url": "https://github.com/Yokachi/gif-finder/issues"
   },
-  "homepage": "https://github.com/Yokachi/r34.api#readme",
+  "homepage": "https://github.com/Yokachi/gif-finder#readme",
   "dependencies": {
     "dabi-images": "^2.7.5",
     "node-fetch": "^2.6.7",
