@@ -1,4 +1,11 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
 async function findGif(key) {
+    if(!key) return 'no key defined'
+    if(key !== key.toString()) return 'key must be a string'
+    let linkarray = [];
     const DabiImages = require("dabi-images");
     const DabiClient = new DabiImages.Client();
 
@@ -9,11 +16,15 @@ async function findGif(key) {
     for(link of matches){
         const test = link.split('src="')[1]
         const tests = `${test}`
-        const test2 = tests.split('"')[0]
-        if(test2.startsWith('https')){
-            console.log(test2)
+        const URL = tests.split('"')[0]
+        if(URL.startsWith('https')){
+            linkarray.push(URL)
         }
     }
+   
+    var result = linkarray[getRandomInt(linkarray.length)]
+
+    return result
 }
 
 module.exports = {
